@@ -9,18 +9,7 @@ VoteStream is a real-time data pipeline project that simulates a live voting sys
 
 
 
-
-
-
-# 🗳️ Real-Time Voting System (VoteStream)
-
-VoteStream is a real-time data pipeline that simulates a live voting system using modern big data tools. It captures votes, processes them instantly, stores results, and shows real-time dashboards using Grafana.
-
 ---
-
-## 🖼️ Architecture
-
-![Architecture](Images/Kappa_Architecture.png)
 
 ```mermaid
 graph LR
