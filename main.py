@@ -137,7 +137,7 @@ if __name__ == "__main__":
     )
     cur = conn.cursor()
 
-    kafka_broker = os.getenv("KAFKA_BROKER", "localhost:9092")
+    kafka_broker = os.getenv("KAFKA_BROKER", "ed-kafka:9092")
     producer = Producer({'bootstrap.servers': kafka_broker})
     print("Kafka producer initialized successfully.")
     
