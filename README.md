@@ -4,7 +4,7 @@ VoteStream is a real-time data pipeline project that simulates a live voting sys
 
 # 🖼️ Real-Time Voting System Architecture
 
-![Real-Time Voting System Architecture](./Images/Kappa Architecture.png)
+![Real-Time Voting System Architecture](Images/Kappa Architecture.png)
 
 ---
 
