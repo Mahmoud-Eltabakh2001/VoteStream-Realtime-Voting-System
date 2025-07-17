@@ -93,7 +93,7 @@ if __name__ == "__main__":
             .option("user", "postgres") \
             .option("password", "postgres") \
             .option("driver", "org.postgresql.Driver") \
-            .mode("overwrite") \
+            .mode("append") \
             .save()
 
     votes_per_candidate_to_postgres=votes_per_candidate \
@@ -120,7 +120,7 @@ if __name__ == "__main__":
             .option("user", "postgres") \
             .option("password", "postgres") \
             .option("driver", "org.postgresql.Driver") \
-            .mode("overwrite") \
+            .mode("append") \
             .save()
 
     turnout_by_location_to_postgres=turnout_by_location \
