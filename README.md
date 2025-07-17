@@ -4,7 +4,58 @@ VoteStream is a real-time data pipeline project that simulates a live voting sys
 
 # 🖼️ Real-Time Voting System Architecture
 
-![Real-Time Voting System Architecture](Images/Kappa Architecture.png)
+![Real-Time Voting System Architecture](Images/Kappa_Architecture.png)
+
+
+
+
+
+
+
+# 🗳️ Real-Time Voting System (VoteStream)
+
+VoteStream is a real-time data pipeline that simulates a live voting system using modern big data tools. It captures votes, processes them instantly, stores results, and shows real-time dashboards using Grafana.
+
+---
+
+## 🖼️ Architecture
+
+![Architecture](Images/Kappa_Architecture.png)
+
+```mermaid
+graph LR
+    A[Vote Generator (Python)] --> B[Kafka Topic: voters_topic]
+    B --> C[Spark Structured Streaming]
+    C --> D[PostgreSQL (voting_db)]
+    D --> E[Grafana Dashboard]
+    C --> F[Kafka Topic: results_topic]
+    F --> G[Optional Consumer / Monitoring]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
