@@ -65,7 +65,6 @@ def delivery_report(err, msg):
 
 # Kafka Topics
 voters_topic = 'voters_topic'
-candidates_topic = 'candidates_topic'
 
 def create_tables(conn, cur):
     cur.execute("""
@@ -178,6 +177,5 @@ if __name__ == "__main__":
             print(f'Produced voter {i}, data: {voter_data["voter_id"]}')
         except Exception as e:
             print(f"Kafka produce error: {e}")
-        time.sleep(0.1)  # ✅ تقدر تضيفه لتقليل الضغط على API
-
+        time.sleep(0.1)  
     producer.flush()
