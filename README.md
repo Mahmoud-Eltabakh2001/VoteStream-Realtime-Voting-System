@@ -120,5 +120,6 @@ SELECT state, COUNT(*) FROM turnout_by_location GROUP BY state;
 
 Mahmoud Reda  
 [LinkedIn](https://www.linkedin.com/in/mahmoud-reda2001/)
+
 Data Engineer | Passionate about real-time systems
 
