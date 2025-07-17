@@ -10,7 +10,7 @@ import uuid
 from main import delivery_report
 
 conf = {
-    'bootstrap.servers': os.getenv("KAFKA_BROKER", "broker:29092"),
+    'bootstrap.servers': os.getenv("KAFKA_BROKER", "ed-kafka:29092"),
 }
 
 consumer = Consumer(conf | {
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
                 except Exception as e:
                     print("Error:", e)
-                    conn.rollback()  # مهم جدًا عشان ترجع تقدر تكمل
+                    conn.rollback()  
                     continue
             time.sleep(0.2)
     except KafkaException as e:
