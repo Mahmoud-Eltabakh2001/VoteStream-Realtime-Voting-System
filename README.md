@@ -94,10 +94,11 @@ SELECT state, COUNT(*) FROM turnout_by_location GROUP BY state;
 
 ```
 ├── docker-compose.yml
+├── Dockerfile               
 ├── main.py                  # Voter generator
 ├── voting.py                # Kafka consumer + vote logic
-├── spark-streaming.ipynb    # Spark Structured Streaming job
-├── grafana/                 # Grafana provisioning setup
+├── spark-streaming.py    # Spark Structured Streaming job
+├── jars/                    # postgresql-42.7.1.jar
 ├── postgres/                # SQL init files
 └── README.md
 ```
