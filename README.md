@@ -82,7 +82,7 @@ docker exec -it ed-pyspark-jupyter-lab python spark-streaming.py
 
 ```sql
 -- Total votes per candidate
-SELECT candidate, COUNT(*) FROM votes GROUP BY candidate;
+SELECT candidate_name ,MAX(total_votes) FROM votes_per_candidate GROUP BY candidate_name;
 
 -- Turnout by state
 SELECT state, COUNT(*) FROM turnout_by_location GROUP BY state;
