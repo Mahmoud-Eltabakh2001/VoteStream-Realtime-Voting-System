@@ -60,7 +60,7 @@ docker exec -it voting_app python voting.py
 
 ### 4. Start Spark Stream processing
 ```bash
-docker exec -it spark-container-name python spark-streaming.py
+docker exec -it ed-pyspark-jupyter-lab python spark-streaming.py
 ```
 
 > This script consumes from `voters_topic`, processes votes, and writes to PostgreSQL and Kafka `results_topic`.
@@ -73,7 +73,7 @@ docker exec -it spark-container-name python spark-streaming.py
 - Login: `admin` / `admin`
 - Datasource: PostgreSQL (voting_db)
 - Sample panels:
-  - 🧑‍🤝‍🧑 Turnout by Location
+  - 🧑‍🤝‍🧑 Gender by Voters
   - 🗳️ Votes per Candidate (Real-Time)
 
 ---
