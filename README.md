@@ -39,8 +39,8 @@ The system collects votes from users in real-time and provides instant analytics
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/realtime-voting-system.git
-cd realtime-voting-system
+git clone https://github.com/Mahmoud-Eltabakh2001/VoteStream-Realtime-Voting-System.git
+cd VoteStream-Realtime-Voting-System
 ```
 
 ### 2. Start the Docker containers
@@ -52,6 +52,10 @@ docker-compose up --build
 In a separate terminal, run the vote generator:
 ```bash
 docker exec -it voting_app python main.py
+```
+
+```bash
+docker exec -it voting_app python voting.py
 ```
 
 ### 4. Start Spark Stream processing
